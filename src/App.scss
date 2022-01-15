@@ -1,0 +1,100 @@
+$color-principal: lightcoral;
+$color-secundario: white;
+$color-terciario: #cfcfc4;
+
+@mixin flex-row {
+  display: flex;
+}
+
+@mixin centrado {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin estilo-nav-footer {
+  background-color: $color-principal;
+  color: $color-secundario;
+  margin: 10px;
+  padding: 10px;
+}
+
+// no funciona
+.estilo-pagina-general {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.flex-row {
+  @include flex-row;
+  @include centrado;
+}
+
+.flex-column {
+  @include flex-column;
+}
+
+.centrado {
+  @include centrado;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.estilo-nav-footer {
+  @include estilo-nav-footer;
+}
+
+.opciones-navegacion {
+  margin: 5px;
+  padding: 5px;
+  list-style: none;
+  cursor: pointer;
+  border: 1px solid $color-principal;
+}
+
+.opciones-navegacion:hover {
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 1px solid $color-secundario;
+  background-color: $color-secundario;
+  color: $color-principal;
+}
+
+.estilo-tarjetas {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid $color-terciario;
+  border-radius: 20px;
+  background-color: $color-terciario;
+  color: rgb(37, 36, 36);
+}
+
+.imagen-tarjeta {
+  border-radius: 20px;
+}
+
+.estilo-boton {
+  border-bottom: none;
+  border-radius: 15px;
+  background-color: $color-principal;
+  color: $color-secundario;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.estilo-boton:hover {
+  border-bottom: $color-principal;
+  border-radius: 15px;
+  background-color: $color-secundario;
+  color: $color-principal;
+  padding: 12px;
+  font-size: 16px;
+}

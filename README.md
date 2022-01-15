@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# Actividad usando React y Sass
+
+1. Crear de cero un proyecto con react
+2. Una barra de navegacion, un componente principal y un footer
+3. Dentro del componente principal quiero dos secciones que sean iguales 
+4. Las dos secciones tienen que tener un titulo, un subtitulo y buna imagen
+5. El titulo, subtitulo, imagen, se tienen que pasar por props
+6. Ademas cada seccion va a llamar al componente boton
+7. En la primera seccion el componente va a decir "primera"
+8. En la segunda va a decir "segunda"
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
