@@ -5,7 +5,7 @@ import Footer from "./components/Footer"
 
 function App() {
   return (
-   <body className='estilo-pagina-general'>
+   <body>
       <Nav/>
       <Main/>
       <Footer/>
